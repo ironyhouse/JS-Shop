@@ -1,0 +1,125 @@
+/* Navbar Control Buttons */
+.navbar-control {
+    width: 100%;
+    position: sticky;
+    top: 4rem;
+    left: 0;
+    right: 0;
+
+    z-index: 2;
+    margin: -1rem;
+}
+.navbar-control::after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    bottom: 1rem;
+    border-bottom: 2px solid var(--header-border-c);
+}
+.arrow, .attach {
+    box-sizing: border-box;
+    height: 2rem;
+    width: 3rem;
+    margin: 0 0.5rem;
+    
+    cursor: pointer;
+    border-radius: 2px;
+    background: var(--icon-bg-c);
+    z-index: 3;
+}
+.arrow:hover, .attach:hover {
+    background: #bacada;
+}
+.navbar-control img {
+    height: 70%;
+}
+.attach img {
+    transform: rotate(45deg);
+    transition: ease-in-out 0.3s;
+}
+.attach img:hover {
+    transform: rotate(0deg);
+}
+
+/* Change Controls */
+.transition-controls .arrow {
+    transform: rotate(180deg);
+}
+.transition-controls .attach {
+    display: none;
+}
+
+/* Side Control Button */
+.side-control {
+    position: fixed;
+    top: 50%;
+    left: 272px;
+    
+    transform: rotate(270deg);
+    z-index: 10;
+    border-radius: 0 0px 10px 10px;
+}
+.side-control img {
+    width: 50%;
+}
+.side-control-hide {
+    left: -1rem;
+}
+.side-control-hide img {
+    transform: rotate(180deg);
+}
+/* Side Shadow */
+.navbar-shadow::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+
+    position: fixed;
+    top: 0;
+    left: 280px;
+
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 5;
+}
+
+
+/* Pin */
+/* .store-list-pin
+.product-list-pin */
+
+.store-list-pin .search {
+    position: sticky;
+    top: 5rem;
+    z-index: 2;
+}
+.store-list-pin .navbar-control {
+    position: sticky;
+    top: 10rem;
+}
+.product-list-pin .header-contact-wrapper {
+    position: sticky;
+    top: 5rem;
+    z-index: 3;
+}
+.product-list-pin .navbar-control {
+    top: 13.5rem;
+    z-index: 3;
+}
+.product-list-pin  .search {
+    position: sticky;
+    top: 14.5rem;
+    z-index: 2;
+}
+.product-list-pin .product-head {
+    position: sticky;
+    top: 19.5rem;
+    z-index: 2;
+}
+.store-list-pin .attach,
+.product-list-pin .attach {
+    background: #bacada;
+}
+.store-list-pin  .attach img,
+.product-list-pin .attach img {
+    transform: rotate(0deg);
+}

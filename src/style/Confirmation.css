@@ -1,0 +1,72 @@
+.confirmation-wrapper {
+    height: 100vh;
+    width: 100vw;
+
+    position: fixed;
+    z-index: 15;
+    background: rgba(0, 0, 0, 0.4);
+}
+.confirmation {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    height: auto;
+    border-radius: 5px;
+
+    background: #fff;
+}
+
+.confirmation-title {
+    width: 100%;
+    color: var(--main-text-c);
+    font-size: 2.1rem;
+    padding: 1rem;
+    border-bottom: 3px solid #C1C1C1;
+    box-sizing: border-box;
+}
+.confirmation img {
+    height: 2rem;
+    width: 2rem;
+    margin-right: 1rem;
+}
+.confirmation-text {
+    width: 100%;
+    font-size: 1.4rem;
+    padding: 2rem 0;
+    text-align: center;
+    border-bottom: 1px solid #C1C1C1;
+}
+.confirmation-text span {
+    margin-left: 0.5rem;
+}
+.confirmation-buttons-wrapper {
+    width: 100%;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 0 0 5px 5px;
+
+}
+.confirmation-buttons-wrapper > div {
+    font-size: 1.4rem;
+    padding: 0.5rem 1rem;
+    margin: 1rem 1rem 1rem 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.button-ok {
+    color: #fff;
+    background: #5495CB;
+}
+.button-ok:hover {
+    color: #fff;
+    background: #76a1c4;
+}
+.button-cancel:hover {
+    background: #C1C1C1;
+}

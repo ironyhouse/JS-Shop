@@ -1,0 +1,109 @@
+.form {
+    height: 100vh;
+    width: 100vw;
+
+    position: fixed;
+    z-index: 15;
+    color: var(--main-text-c);
+    background: rgba(0, 0, 0, 0.4);
+}
+.create-form {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    height: auto;
+    border-radius: 5px;
+
+    background: #fff;
+}
+.form h3 {
+    width: 100%;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+
+    color: var(--sub-text-c);
+    text-align: center;
+
+    border-bottom: 1px solid #C1C1C1;
+}
+.form-input-wrapper {
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+.form-input-wrapper div {
+    font-size: 1.4rem;
+    margin: 0.2rem 0 0.7rem;
+    color: #C8423F;
+}
+.create-form label {
+    font-size: 1.4rem;
+
+    margin-bottom: 0.5rem;
+}
+.create-form label span {
+    color: #C8423F;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+.create-form input,
+.create-form textarea,
+.create-form input, .create-form select {
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 1.4rem;
+
+    padding: 0.5rem 1rem;
+    border: 1px solid #C1C1C1;
+    margin-top: 0.5rem;
+    
+    outline-width: 1px;
+    outline-color: #5395CF;
+
+}
+.create-form input,
+.create-form textarea {
+    font-family: Arial, sans-serif;
+}
+.create-form input::placeholder,
+.create-form textarea::placeholder {
+    font-family: Arial, sans-serif;
+    font-style: italic;
+}
+.form-buttons-wrapper {
+    width: 100%;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 0 0 5px 5px;
+
+    background: #2F3B47;
+}
+.form-button-create, .form-button-cancel {
+    padding: 0.5rem 1rem;
+    margin: 1rem 1rem 1rem 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.form-button-create {
+    font-size: 1.4rem;
+    color: #fff;
+    background: #5495CB;
+}
+.form-button-create:hover {
+    color: #fff;
+    background: #76a1c4;
+}
+.form-button-cancel {
+    font-size: 1.2rem;
+    color: #fff;
+    border: none;
+    background: none;
+}
+.create-form .invalid {
+    border: 1px solid rgba(207, 0, 15, 1);
+}

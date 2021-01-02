@@ -1,0 +1,152 @@
+@import './reset.css';
+@import './font.css';
+@import './SearchPanel.css';
+@import './StoresList.css';
+@import './ControlElements.css';
+@import './StoreContact.css';
+@import './StoreFiltersPanel.css';
+@import './StoreProductsTable.css';
+@import './StoreEmpty.css';
+@import './CreateButtons.css';
+@import './CreateForm.css';
+@import './Confirmation.css';
+
+/* Default Settings */
+html {
+    font-size: 10px;
+}
+/* bg -> background */
+/* c -> color */
+/* f -> footer */
+/* c -> color */
+:root {
+    /* colors */
+    --header-bg-c: #EFF4F8;
+    --header-border-c: #D0DEE8;
+
+    --main-bg-c: #F7F7F7;
+    --main-text-c: #525252;
+    --item-hover:  rgb(97%, 97%, 97%, 1);
+    --item-checked: rgb(27%, 49%, 68%, 1);
+    --sub-text-c: #838383;
+
+    --footer-bg-c:rgba(11, 19, 36, 0.7);
+    --button-f-bg-c: #445565;
+
+    --icon-c: #688196;
+    --icon-bg-c: #D0E0EF;
+    --scroll-c: #B0B0B0;
+}
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--scroll-c);
+}
+body {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background: #fff;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hide {
+    display: none;
+}
+.hidden {
+    opacity: 0;
+}
+/* Fonts */
+h1 { font-size: 3.6rem;}
+h2 { font-size: 2.4rem;}
+h3 { font-size: 2.1rem;}
+h4 { font-size: 1.8rem;}
+h5 { font-size: 1.6rem;}
+h6 { font-size: 1.4rem;}
+/* //////////////////////////////////// */
+
+
+/***** Stores List Wrapper*****/
+.store-list-wrapper {
+    width: 280px;
+    min-width: 280px;
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-right: 2px solid var(--header-border-c);
+}
+.number-stores {
+    font-size: 1.8rem;
+    margin-left: 1rem;
+    padding: 0 0.5rem;
+    border-radius: 10%;
+    border: 2px solid var(--header-border-c);
+    background: var(--icon-bg-c);
+}
+/* Header Title */
+.header-title {
+    height: 5rem;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+
+    z-index: 2;
+    color: var(--main-text-c);
+    background: var(--header-bg-c);
+
+    box-sizing: border-box;
+}
+.store-list-wrapper .header-title {
+    font-size: 2.1rem;
+    padding: 1rem 2rem 2rem;
+}
+/***** Store Details Wrapper *****/
+.store-details-wrapper {
+    width: 100%;
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.store-details-wrapper .header-title {
+    padding: 1rem 4rem 2rem 4rem;
+}
+
+
+/* Media */
+@media (max-width: 1200px) {
+    html {
+        font-size: 8px;
+    }
+    .navbar-control  {
+        top: 34px;
+    }
+    .products-head {
+        top: 41px;
+    }
+}
+@media (max-width: 576px) {
+    html {
+        font-size: 6px;
+    }
+    .navbar-control  {
+        top: 25px;
+    }
+    .products-head {
+        top: 30px;
+    }
+    .filter-panel {
+        margin-top: 10px;
+    }
+    .rating img {
+        height: 1rem;
+        width: 1rem;
+    }
+}

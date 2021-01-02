@@ -1,0 +1,63 @@
+/* Stores Search */
+.search {
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem 2rem;
+    background: var(--header-bg-c);
+    position: relative;
+}
+.store-search-pin {
+    position: sticky;
+    top: 5rem;
+    z-index: 2;
+}
+.empty-store-list {
+    flex-direction: column;
+
+    height: 10rem;
+    width: auto;
+    margin-top: 10rem;
+
+    font-size: 1.6rem;
+}
+.empty-store-list img {
+    height: 10rem;
+    width: 10rem;
+    margin-bottom: 2rem;
+}
+.empty-store-list p {
+    font-weight: 500;
+    color: #688196;
+}
+.product-wrapper .search {
+    padding: 1rem;
+}
+.search input {
+    width: 100%;
+    max-width: 280px;
+    padding: 0.5rem 7rem 0.5rem 1rem;
+    box-sizing: border-box;
+    font-size: 1.4rem;
+    outline: none;
+}
+.search input::placeholder {
+    font-style: italic;
+}
+.search div {
+    position: absolute;
+}
+.search img {
+    height: 1.6rem;
+    width: 1.8rem;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+    padding: 0.5rem;
+}
+.reload, .delete {
+    right: 2.1rem;
+}
+.reload:hover img {
+    transform: rotate(360deg);
+}

@@ -1,0 +1,34 @@
+/* Contacts */
+.header-contact-wrapper {
+    height: 5.5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    font-size: 1.4rem;
+    padding: 2rem 4rem;
+
+    background: var(--header-bg-c);
+}
+.header-contact-pin {
+    position: sticky;
+    top: 5rem;
+    z-index: 2;
+}
+.header-contact-wrapper ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 1fr 1fr 1fr;
+}
+.header-contact--item {
+    color: var(--sub-text-c);
+    margin: 0 3rem 0.5rem 0;
+}
+.header-contact--item:last-child {
+    margin-bottom: 0;
+}
+.header-contact--item span:nth-child(1) {
+    color: var(--main-text-c);
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
